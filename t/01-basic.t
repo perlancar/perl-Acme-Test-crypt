@@ -16,6 +16,10 @@ my @tests = (
     {type=>'SSHA256', note=>'+rounds', salt=>'$5$rounds=9999$123456789$'},
     {type=>'SSHA512', salt=>'$6$12345678$'},
     {type=>'SSHA512', note=>'+rounds', salt=>'$6$rounds=9999$12345678$'},
+    {type=>'BCRYPT', note=>' (2 variant)', salt=>'$2$10$1234567890123456789012$'},
+    {type=>'BCRYPT', note=>' (2a variant)', salt=>'$2a$10$1234567890123456789012$'},
+    {type=>'BCRYPT', note=>' (2b variant)', salt=>'$2b$10$1234567890123456789012$'},
+    {type=>'BCRYPT', note=>' (2y variant)', salt=>'$2y$10$1234567890123456789012$'},
 );
 
 my @res;
